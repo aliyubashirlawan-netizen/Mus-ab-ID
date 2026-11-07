@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mus'ab ID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <img src="logo.png" alt="Mus'ab ID logo">
+  </header>
+
+  <main>
+    <section class="form-box">
+      <h1>Make your student ID card</h1>
+      <p class="intro">Fill in your details and press Submit.</p>
+
+      <form id="id-form" novalidate>
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="e.g. Musa Ibrahim">
+
+        <label for="school">School</label>
+        <input type="text" id="school" placeholder="e.g. University of Jos">
+
+        <label for="course">Course</label>
+        <input type="text" id="course" placeholder="e.g. Computer Science">
+
+        <p id="error" class="error" role="alert"></p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="card" class="card hidden">
+      <div class="card-top">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="card-body">
+        <div class="photo">Photo</div>
+        <div class="details">
+          <p class="label">Name</p>
+          <p id="card-name" class="value big"></p>
+
+          <p class="label">School</p>
+          <p id="card-school" class="value"></p>
+
+          <p class="label">Course</p>
+          <p id="card-course" class="value"></p>
+        </div>
+      </div>
+      <div class="card-bottom">Student ID</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
