@@ -1,0 +1,195 @@
+/* Colours taken from the Mus'ab ID logo */
+:root {
+  --navy: #12315f;
+  --teal: #1d7a6a;
+  --blue: #2b8fd6;
+  --dark: #0c1622;
+  --grey: #5b6675;
+  --line: #d5dae1;
+  --red: #b3261e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, "Segoe UI", Arial, sans-serif;
+  color: #1c2430;
+  background: #eef1f5;
+}
+
+.top {
+  background: var(--dark);
+  text-align: center;
+}
+
+.top img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 16px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-box {
+  flex: 1 1 340px;
+  max-width: 420px;
+  background: #fff;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: var(--navy);
+}
+
+.intro {
+  margin: 0 0 20px;
+  color: var(--grey);
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #aab3bf;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 2px solid var(--blue);
+  border-color: var(--blue);
+}
+
+.error {
+  min-height: 20px;
+  margin: 14px 0 0;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--navy);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0c2347;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* This one class hides the card (and anything else) */
+.hidden {
+  display: none;
+}
+
+/* The ID card */
+.card {
+  flex: 0 1 380px;
+  width: 380px;
+  max-width: 100%;
+  background: #fff;
+  border: 2px solid var(--navy);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-top {
+  height: 120px;
+  background: var(--dark);
+}
+
+.card-top img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.card-body {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.photo {
+  flex: 0 0 90px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--grey);
+  background: #e6eaf0;
+  border: 1px dashed #9aa5b3;
+}
+
+.details {
+  min-width: 0;
+}
+
+.label {
+  margin: 0;
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.value {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.value.big {
+  font-size: 18px;
+  color: var(--navy);
+}
+
+.card-bottom {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--teal);
+}
